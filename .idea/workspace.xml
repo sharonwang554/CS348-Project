@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="10413343-9f33-48f6-b616-e9435f270a17" name="Default Changelist" comment="" />
+    <list default="true" id="10413343-9f33-48f6-b616-e9435f270a17" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory/inventory/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/inventory/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory/inventoryapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/inventoryapp/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory/inventoryapp/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory/inventoryapp/migrations/0002_store_name.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory/inventoryapp/migrations/0003_remove_item_purchase_id.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory/inventoryapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/inventoryapp/models.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +22,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/inventory/inventory/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+            <state relative-caret-position="-511">
+              <caret line="79" column="45" lean-forward="true" selection-start-line="79" selection-start-column="45" selection-end-line="79" selection-end-column="45" />
               <folding>
                 <element signature="e#310#334#0" expanded="true" />
               </folding>
@@ -23,19 +32,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/inventory/inventory/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/inventory/inventoryapp/apps.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/inventory/inventoryapp/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+            <state relative-caret-position="225">
+              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -46,25 +51,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/inventory/inventoryapp/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/inventory/inventoryapp/views.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/inventory/inventoryapp/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+            <state relative-caret-position="532">
+              <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -81,22 +69,37 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>bool</find>
+      <find>char</find>
+      <find>customer_id</find>
+      <find>auto</find>
+      <find>primary</find>
+      <find>AUTH_USER_MODEL</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/inventory/inventory/settings.py" />
         <option value="$PROJECT_DIR$/inventory/inventoryapp/urls.py" />
+        <option value="$PROJECT_DIR$/inventory/inventory/urls.py" />
         <option value="$PROJECT_DIR$/inventory/inventoryapp/admin.py" />
+        <option value="$PROJECT_DIR$/inventory/inventory/settings.py" />
         <option value="$PROJECT_DIR$/inventory/inventoryapp/models.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="38" />
+    <option name="x" value="320" />
     <option name="y" value="23" />
-    <option name="width" value="1191" />
+    <option name="width" value="1085" />
     <option name="height" value="829" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -108,11 +111,6 @@
             <path>
               <item name="348project" type="b2602c69:ProjectViewProjectNode" />
               <item name="348project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="348project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="348project" type="462c0819:PsiDirectoryNode" />
-              <item name="env" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="348project" type="b2602c69:ProjectViewProjectNode" />
@@ -130,6 +128,13 @@
               <item name="348project" type="462c0819:PsiDirectoryNode" />
               <item name="inventory" type="462c0819:PsiDirectoryNode" />
               <item name="inventoryapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="348project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="348project" type="462c0819:PsiDirectoryNode" />
+              <item name="inventory" type="462c0819:PsiDirectoryNode" />
+              <item name="inventoryapp" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -168,10 +173,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="38" y="23" width="1191" height="829" extended-state="0" />
+    <frame x="320" y="23" width="1085" height="829" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24957265" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21146616" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -182,7 +187,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32971507" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32971507" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -191,25 +196,12 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/inventory/inventory/settings.py">
+    <entry file="file://$PROJECT_DIR$/inventory/manage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
-          <folding>
-            <element signature="e#310#334#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="225">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inventory/inventory/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inventory/inventoryapp/views.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/inventory/inventoryapp/urls.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -221,20 +213,87 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/inventory/inventoryapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inventory/inventory/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inventory/inventory/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inventory/inventory/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inventory/inventory/asgi.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inventory/inventoryapp/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inventory/inventoryapp/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/inventory/inventoryapp/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        <state relative-caret-position="225">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/inventory/inventoryapp/migrations/0004_auto_20211207_2040.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inventory/inventoryapp/migrations/0003_remove_item_purchase_id.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inventory/inventoryapp/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-481" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inventory/inventoryapp/migrations/0005_auto_20211207_2049.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inventory/inventoryapp/migrations/0006_auto_20211207_2052.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inventory/inventoryapp/migrations/0007_auto_20211207_2103.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inventory/inventory/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-511">
+          <caret line="79" column="45" lean-forward="true" selection-start-line="79" selection-start-column="45" selection-end-line="79" selection-end-column="45" />
+          <folding>
+            <element signature="e#310#334#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/inventory/inventoryapp/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+        <state relative-caret-position="532">
+          <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
