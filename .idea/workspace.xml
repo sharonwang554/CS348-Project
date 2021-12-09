@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10413343-9f33-48f6-b616-e9435f270a17" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory/inventory/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/inventory/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory/inventoryapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/inventoryapp/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory/inventoryapp/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory/inventoryapp/migrations/0002_store_name.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory/inventoryapp/migrations/0003_remove_item_purchase_id.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory/inventoryapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/inventoryapp/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +44,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/inventory/inventoryapp/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
+            <state relative-caret-position="570">
               <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
@@ -117,25 +110,6 @@
               <item name="348project" type="462c0819:PsiDirectoryNode" />
               <item name="inventory" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="348project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="348project" type="462c0819:PsiDirectoryNode" />
-              <item name="inventory" type="462c0819:PsiDirectoryNode" />
-              <item name="inventory" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="348project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="348project" type="462c0819:PsiDirectoryNode" />
-              <item name="inventory" type="462c0819:PsiDirectoryNode" />
-              <item name="inventoryapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="348project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="348project" type="462c0819:PsiDirectoryNode" />
-              <item name="inventory" type="462c0819:PsiDirectoryNode" />
-              <item name="inventoryapp" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -170,13 +144,21 @@
       <option name="presentableId" value="Default" />
       <updated>1635882783626</updated>
     </task>
+    <task id="LOCAL-00001" summary="New Models and settings file">
+      <created>1638931872617</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1638931872618</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="320" y="23" width="1085" height="829" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21146616" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21146616" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -187,13 +169,17 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32971507" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49906015" visible="true" weight="0.32971507" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50093985" side_tool="true" weight="0.32971507" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="New Models and settings file" />
+    <option name="LAST_COMMIT_MESSAGE" value="New Models and settings file" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/inventory/manage.py">
@@ -292,7 +278,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/inventory/inventoryapp/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
+        <state relative-caret-position="570">
           <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
