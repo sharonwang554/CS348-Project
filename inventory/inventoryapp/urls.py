@@ -1,6 +1,7 @@
 from django.urls import path
 from . import views
+
+app_name = 'inventory'
 urlpatterns = [
-    path('$/', views.posts, name='posts'),
-    path('$/', views.comments, name='comments'),
+    path('form/', views.order_form, name='form')
 ]
