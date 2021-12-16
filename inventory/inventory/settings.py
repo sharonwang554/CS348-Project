@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
+import pymysql
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -78,9 +79,9 @@ WSGI_APPLICATION = 'inventory.wsgi.application'
 DATABASES = {
      'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': '348project',
+        'NAME': 'inventoryapp',
         'USER': 'root',
-        'PASSWORD': 'CS348project',
+        'PASSWORD': 'mysql4275',
         'HOST': '127.0.0.1',
         'PORT': '3306',
         'OPTIONS': {
@@ -88,7 +89,8 @@ DATABASES = {
         }
     }
 }
-
+pymysql.version_info = (1, 4, 2, "final", 0)
+pymysql.install_as_MySQLdb()
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators

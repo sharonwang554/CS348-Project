@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>{% block title %}Employee Report Page{% endblock %}</title>
+</head>
+
+<body>
+    <div id="content" name="content">
+	{% block content %}
+    <h1>Employee Report Page</h1>
+	{% endblock %}
+
+    <b>Employee Sales Report</b>
+    <table border="1">
+        <thead>
+          <tr>
+            <th>Employee ID</th>
+            <th>Employee Name</th>
+            <th>Item ID</th>
+            <th>Item Price</th>
+            <th>Item Quantity</th>
+            <th>Total Profit</th>
+          </tr>
+        </thead>
+        <tbody>
+        {% for e in Employee %}  
+          <tr>
+            <td>{{e.employee_id}}</td>
+            <td>{{e.name}}</td>
+            <td>{{e.item1_id}}</td>
+            <td>{{e.item_price}}</td>
+            <td>{{e.quantity}}</td>
+            <td>{{e.total_profit}}</td>
+          </tr>
+          {% endfor %} 
+        </tbody>
+    </table>
+    <br>
+    <b>Employee With Most Sales Profit</b>
+    <table border="1">
+        <thead>
+          <tr>
+            <th>Employee ID</th>
+            <th>Employee Name</th>
+            <th>Item ID</th>
+            <th>Item Price</th>
+            <th>Item Quantity</th>
+            <th>Total Profit</th>
+          </tr>
+        </thead>
+        <tbody>
+        {% for e in Most_Sales %}  
+          <tr>
+            <td>{{e.employee_id}}</td>
+            <td>{{e.name}}</td>
+            <td>{{e.item1_id}}</td>
+            <td>{{e.item_price}}</td>
+            <td>{{e.quantity}}</td>
+            <td>{{e.total_profit}}</td>
+          </tr>
+          {% endfor %} 
+        </tbody>
+    </table>
+
+    </br>
+    <b>Employee Bonus Report</b>
+    <table border="1">
+        <thead>
+          <tr>
+            <th>Employee ID</th>
+            <th>Employee Name</th>
+            <th>Bonus</th>
+          </tr>
+        </thead>
+        <tbody>
+        {% for e in Bonus %}  
+          <tr>
+            <td>{{e.id}}</td>
+            <td>{{e.name}}</td>
+            <td>{{e.bonus}}</td>
+          </tr>
+          {% endfor %} 
+        </tbody>
+    </table>
+    </div>
+
+</body>
+</html>
