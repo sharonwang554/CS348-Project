@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
-
+from django.db.models.signals import post_save
 
 class Item(models.Model):
     item_cost = models.IntegerField(models.DecimalField(max_digits=6, decimal_places=2), default=0)

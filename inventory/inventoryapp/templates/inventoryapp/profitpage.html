@@ -1,0 +1,82 @@
+<html>
+<head>
+    <title>{% block title %}Profit Report Page{% endblock %}</title>
+</head>
+
+<body>
+    <div id="content" name="content">
+	{% block content %}
+    <h1>Profit Report Page</h1>
+	{% endblock %}
+
+    <b>Profit Report By Month</b>
+    <table border="1">
+        <thead>
+          <tr>
+            <th>Month</th>
+            <th>Number of Items Sold</th>
+            <th>Total Expenses</th>
+            <th>Total Revenue</th>
+            <th>Total Profit</th>
+          </tr>
+        </thead>
+        <tbody>
+        {% for rec in ProfitMonth %}
+          <tr>
+            <td>{{rec.month}}</td>
+            <td>{{rec.num_item_sold}}</td>
+            <td>{{rec.total_expenses}}</td>
+            <td>{{rec.total_revenue}}</td>
+            <td>{{rec.total_profit}}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+    </table>
+    <br>
+
+    <b>Profit Report By Item</b>
+    <table border="1">
+        <thead>
+          <tr>
+            <th>Item ID</th>
+            <th>Number of Items Sold</th>
+            <th>Total Expenses</th>
+            <th>Total Revenue</th>
+            <th>Total Profit</th>
+          </tr>
+        </thead>
+        <tbody>
+        {% for rec in ProfitItem %}
+          <tr>
+            <td>{{rec.id}}</td>
+            <td>{{rec.num_item_sold}}</td>
+            <td>{{rec.total_expenses}}</td>
+            <td>{{rec.total_revenue}}</td>
+            <td>{{rec.total_profit}}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+    </table>
+
+    <b>Profit Report Monthly Overview</b>
+    <table border="1">
+        <thead>
+          <tr>
+            <th>Month</th>
+            <th>Profit</th>
+          </tr>
+        </thead>
+        <tbody>
+        {% for rec in ProfitMonthOverviewB %}
+          <tr>
+            <td>{{rec.month}}</td>
+            <td>{{rec.total_profit}}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+    </table>
+
+    </div>
+
+</body>
+</html>
