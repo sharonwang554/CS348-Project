@@ -2,9 +2,10 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from inventoryapp.models import Item, Inventory, Customer, Customer_rewards, Employee, Employee_bonus, Order, Profit
 from django.db.models import Avg, Max, Min, Sum, Count
+from django.db import transaction
 
 # Create your views here.
-
+@transaction.atomic
 def employeepage(response): 
     report_query = '''select 1 as id, employee_id_id as employee_id, name, item1_id, item_price, sum(item1_q) as quantity, sum(item_price * item1_q) as total_profit
     from inventoryapp_item i join inventoryapp_order o on i.id = o.item1_id join inventoryapp_employee e on e.id=o.employee_id_id 

@@ -5,7 +5,7 @@ from django.db.models.signals import post_save
 
 class Item(models.Model):
     item_cost = models.IntegerField(models.DecimalField(max_digits=6, decimal_places=2), default=0)
-    item_price = models.IntegerField(models.DecimalField(max_digits=6, decimal_places=2), default=0)
+    item_price = models.IntegerField(models.DecimalField(max_digits=6, decimal_places=2), default=0, db_index= True)
 
 
 class Inventory(models.Model):
@@ -32,14 +32,14 @@ class Employee(models.Model):
 
 class Employee_bonus(models.Model):
     employee_id = models.ForeignKey(Employee, on_delete=models.CASCADE)
-    total_profit_sold = models.IntegerField(models.DecimalField(max_digits=6, decimal_places=2), default=0)
+    total_profit_sold = models.IntegerField(models.DecimalField(max_digits=6, decimal_places=2), db_index= True, default=0)
     number_items_sold = models.IntegerField(default=0)
     bonus = models.IntegerField(models.DecimalField(max_digits=6, decimal_places=2))
 
 
 class Order(models.Model):
     item1 = models.ForeignKey(Item, on_delete=models.CASCADE)
-    item1_q = models.IntegerField(default=0)
+    item1_q = models.IntegerField(default=0, db_index=True)
     customer_id = models.ForeignKey(Customer, on_delete=models.CASCADE)
     date = models.DateTimeField(auto_now_add=True)
     employee_id = models.ForeignKey(Employee, on_delete=models.CASCADE)

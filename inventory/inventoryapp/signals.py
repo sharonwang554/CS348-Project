@@ -3,7 +3,9 @@ from django.dispatch import receiver
 from inventoryapp.models import Item, Inventory, Customer, Customer_rewards, Employee, Employee_bonus, Order, Profit
 from django.db.models import F
 from django.db import connection
+from django.db import transaction
 
+@transaction.atomic
 @receiver(post_save, sender=Order)
 def update_bonus(sender, instance=None, created=False, **kwargs):
     if created:
