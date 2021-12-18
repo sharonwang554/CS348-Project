@@ -1,0 +1,34 @@
+﻿DELIMITER go
+CREATE PROCEDURE sp_inventory_update(IN item_q int, IN id int) BEGIN UPDATE inventoryapp_inventory SET item_stock = item_stock - item_q, units_sold = units_sold + item_q WHERE item_id_id = id; END; 
+go
+
+
+DELIMITER ;
+
+
+DELIMITER $$
+mysql> CREATE TRIGGER order_trigger AFTER INSERT ON inventoryapp_order FOR EACH ROW BEGIN CALL sp_inventory_update(new.item1_q, new.item1_id);
+END$$
+
+
+DELIMITER ;
+
+
+create index item_id using hash on inventoryapp_inventory(item_id_id);
+
+
+CREATE INDEX idx_total_profit ON inventoryapp_employee_bonus (total_profit_sold);
+CREATE INDEX idx_quantity ON inventoryapp_order (item1_q);
+CREATE INDEX idx_price ON inventoryapp_item (item_price);
+
+
+DELIMITER end
+CREATE INDEX idx_price ON inventoryapp_item (item_price);
+CREATE INDEX idx_cost ON inventoryapp_item(item_cost)
+CREATE INDEX idx_quantity ON inventoryapp_order (item1_q);
+DELIMITER end
+
+
+
+
+CREATE INDEX customer_order ON inventoryapp_order(customer_id_id);
