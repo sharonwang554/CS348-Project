@@ -22,10 +22,10 @@ def update_monthly_profit(sender, instance=None, created=False, **kwargs):
             # get a single line from the result
             row = cursor.fetchone()
             # get the value in the first column of the result (the only column)
-            month = row[1]
+            month = row[1].strftime('%B')
             total_profit = row[6]
 
-            for rec in Profit.objects(date.strftime('%B')=instance.date.strftime('%B')):
+            for rec in Profit.objects(date=instance.date):
                 rec.profit += total_profit
                 rec.save()
 
