@@ -13,7 +13,7 @@ def update_monthly_profit(sender, instance=None, created=False, **kwargs):
         with connection.cursor() as cursor:
             cursor.execute('''
                             select ord.id, monthname(date) as month,sum(item1_q) as num_item_sold, 
-                            sum(item_cost) as total_expenses, sum(item_price) as total_revenue, sum(((item_price-item_cost) * item1_q)) as total_profit
+                            sum(item_cost) as total_expenses, sum(item_price) as total_revenue, sum(item_price-item_cost) as total_profit
                             from inventoryapp_item itm join inventoryapp_order ord on itm.id = ord.item1_id 
                             group by month
                             having max(ord.item1_id);

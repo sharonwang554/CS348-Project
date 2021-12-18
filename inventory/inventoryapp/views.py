@@ -9,16 +9,16 @@ from django.db import transaction
 def profitpage(response):
     profit_query = '''
     
-        select ord.id, monthname(date) as month,sum(item1_q) as num_item_sold, 
-            sum(item_cost) as total_expenses, sum(item_price) as total_revenue, sum(((item_price-item_cost) * item1_q)) as total_profit
+        select ord.id, monthname(date) as month,count(item1_q) as num_item_sold, 
+            sum(item_cost) as total_expenses, sum(item_price) as total_revenue, sum(item_price-item_cost) as total_profit
         from inventoryapp_item itm join inventoryapp_order ord on itm.id = ord.item1_id
         group by month;
         '''
     profit_by_month = Profit.objects.raw(profit_query)
 
     profit_query_item = '''
-            select itm.id, sum(item1_q) as num_item_sold,
-                sum(item_cost) as total_expenses, sum(item_price) as total_revenue, sum(((item_price-item_cost) * item1_q)) as total_profit
+            select itm.id, count(item1_q) as num_item_sold,
+                sum(item_cost) as total_expenses, sum(item_price) as total_revenue, sum(item_price-item_cost) as total_profit
             from inventoryapp_item itm join inventoryapp_order ord on itm.id = ord.item1_id
             group by itm.id;
             '''
@@ -29,7 +29,7 @@ def profitpage(response):
     profit_query = '''
 
             select ord.id, monthname(date) as month,sum(item1_q) as num_item_sold, 
-                sum(item_cost) as total_expenses, sum(item_price) as total_revenue, sum(((item_price-item_cost) * item1_q)) as total_profit
+                sum(item_cost) as total_expenses, sum(item_price) as total_revenue, sum(item_price-item_cost) as total_profit
             from inventoryapp_item itm join inventoryapp_order ord on itm.id = ord.item1_id
             group by month;
             '''
