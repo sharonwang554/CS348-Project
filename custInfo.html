@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title>{% block title %}Customer Information{% endblock %}</title>
+</head>
+
+<body>
+    <div id="content" name="content">
+	{% block content %}
+    <h1>All Customer Information</h1>
+	{% endblock %}
+
+    <b>All Customers</b>
+    <table border="1">
+        <thead>
+          <tr>
+            
+            <th>Name</th>
+            <th>Address</th>
+            <th>Number of Orders</th>
+            <th>Total Money Spent</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+        {% for e in All_Customers %}  
+          <tr>
+            <td>{{e.name}}</td>
+            <td>{{e.address}}</td>
+            <td>{{e.numPurchases}}</td>
+            <td>{{e.totalSpent}}</td>
+          </tr>
+          {% endfor %} 
+        </tbody>
+    </table>
+    <br>
+    <b>Purchases by Customer</b>
+    <table border="1">
+        <thead>
+          <tr>
+            
+            <th>Name</th>
+            <th>Item Purchased</th>
+            <th>Date</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+        {% for e in CustomerPurchases %}  
+          <tr>
+            <td>{{e.name}}</td>
+            <td>{{e.item1_id}}</td>
+            <td>{{e.date}}</td>
+          </tr>
+          {% endfor %} 
+        </tbody>
+    </table>
+    <br>
+    
+    </div>
+
+</body>
+</html>
