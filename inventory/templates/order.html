@@ -1,10 +1,21 @@
+{% if submitted %}
+<p class="success">
+    Your Order was submitted successfully. Thank you.
+</p>
+{% for t in total %}
+<p>
+    Your total is: {{t.total}} dollars
+</p>
+{% endfor %}
+{% else %}
 <div class="container">
     <form method="POST">
       <fieldset>
-        <legend>Form</legend>
+        <legend>Order Form</legend>
         {% csrf_token %}
         {{ form.as_p }}
         <button type="submit" class="btn btn-primary">Submit</button>
       </fieldset>
     </form>
 </div>
+{% endif %}
