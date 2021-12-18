@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>{% block title %}Customer Rewards{% endblock %}</title>
+</head>
+
+<body>
+    <div id="content" name="content">
+	{% block content %}
+    <h1>Customer Rewards</h1>
+	{% endblock %}
+
+    <b>All Customers</b>
+    <table border="1">
+        <thead>
+          <tr>
+
+            <th>Name</th>
+            <th>Rewards Points</th>
+            <th>Has Rewards? (Redeemable)</th>
+          </tr>
+        </thead>
+        <tbody>
+        {% for e in CustomerRewards %}
+          <tr>
+            <td>{{e.name}}</td>
+            <td>{{e.rewards_points}}</td>
+            <td>{{e.has_rewards}}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+    </table>
+    <br>
+
+    </div>
+
+</body>
+</html>
